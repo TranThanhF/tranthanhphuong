@@ -2,14 +2,6 @@
 using namespace std;
 
 // Hàm tính UCLN bằng thuật toán Euclid
-int UCLN(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
 
 int main() {
     int num1, num2;
