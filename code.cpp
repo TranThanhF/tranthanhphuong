@@ -11,6 +11,11 @@ int UCLN(int a, int b) {
     return a;
 }
 
+// Hàm tính BCNN
+int BCNN(int a, int b) {
+    return (a * b) / UCLN(a, b);
+}
+
 int main() {
     int num1, num2;
 
@@ -20,9 +25,10 @@ int main() {
     cout << "Nhập số thứ hai: ";
     cin >> num2;
 
-    // Tính và in ra UCLN
-    cout << "Ước chung lớn nhất của " << num1 << " và " << num2 << " là: " << UCLN(num1, num2) << endl;
+    // Tính và in ra BCNN
+    cout << "Bội chung nhỏ nhất của " << num1 << " và " << num2 << " là: " << BCNN(num1, num2) << endl;
 
     return 0;
 }
+
 
