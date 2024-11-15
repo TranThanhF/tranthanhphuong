@@ -55,6 +55,8 @@ public class PhepChia {
         }
 
         scanner.close();
+  System.out.println("So nguyen to la:qweqweqweqwqwe");
+
     }
 }
 
