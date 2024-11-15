@@ -1,32 +1,31 @@
 #include <iostream>
 using namespace std;
 
-// Hàm tính UCLN bằng thuật toán Euclid
-int UCLN(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
+// Hàm in dãy Fibonacci với số lượng n phần tử
+void inFibonacci(int n) {
+    int a = 0, b = 1;
+    cout << "Dãy Fibonacci: ";
+    for (int i = 0; i < n; i++) {
+        cout << a << " ";
+        int temp = a + b; // Tính số Fibonacci tiếp theo
+        a = b;
+        b = temp;
     }
-    return a;
-}
-
-// Hàm tính BCNN
-int BCNN(int a, int b) {
-    return (a * b) / UCLN(a, b);
+    cout << endl;
 }
 
 int main() {
-    int num1, num2;
+    int n;
 
-    // Nhập hai số nguyên từ người dùng
-    cout << "Nhập số thứ nhất: ";
-    cin >> num1;
-    cout << "Nhập số thứ hai: ";
-    cin >> num2;
+    // Nhập số lượng phần tử Fibonacci cần in
+    cout << "Nhập số phần tử của dãy Fibonacci: ";
+    cin >> n;
 
-    // Tính và in ra BCNN
-    cout << "Bội chung nhỏ nhất của " << num1 << " và " << num2 << " là: " << BCNN(num1, num2) << endl;
+    if (n <= 0) {
+        cout << "Vui lòng nhập số nguyên dương!" << endl;
+    } else {
+        inFibonacci(n);
+    }
 
     return 0;
 }
