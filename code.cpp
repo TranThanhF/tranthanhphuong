@@ -3,8 +3,10 @@ using namespace std;
 
 // Hàm tính UCLN bằng thuật toán Euclid
 
-int main() {
+int main()
+{
     int num1, num2;
+    cout << "khi 2";
 
     // Nhập hai số nguyên từ người dùng
     cout << "Nhập số thứ nhất: ";
@@ -17,4 +19,3 @@ int main() {
 
     return 0;
 }
-
