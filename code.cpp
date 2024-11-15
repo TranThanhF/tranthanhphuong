@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int num1, num2;
-    cout << "khi 2";
+    cout << "khi 3";
 
     // Nhập hai số nguyên từ người dùng
     cout << "Nhập số thứ nhất: ";
