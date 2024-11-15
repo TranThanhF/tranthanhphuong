@@ -1,33 +1,25 @@
-#include <iostream>
-using namespace std;
+import java.util.Scanner;
 
-// Hàm in dãy Fibonacci với số lượng n phần tử
-void inFibonacci(int n) {
-    int a = 0, b = 1;
-    cout << "Dãy Fibonacci: ";
-    for (int i = 0; i < n; i++) {
-        cout << a << " ";
-        int temp = a + b; // Tính số Fibonacci tiếp theo
-        a = b;
-        b = temp;
+public class PhepChia {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Nhập hai số
+        System.out.print("Nhập số thứ nhất (a): ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Nhập số thứ hai (b): ");
+        double b = scanner.nextDouble();
+
+        // Kiểm tra điều kiện b != 0
+        if (b == 0) {
+            System.out.println("Lỗi: Không thể chia cho 0!");
+        } else {
+            double thuong = a / b;
+            System.out.println("Thương của " + a + " và " + b + " là: " + thuong);
+        }
+
+        scanner.close();
     }
-    cout << endl;
 }
-
-int main() {
-    int n;
-
-    // Nhập số lượng phần tử Fibonacci cần in
-    cout << "Nhập số phần tử của dãy Fibonacci: ";
-    cin >> n;
-
-    if (n <= 0) {
-        cout << "Vui lòng nhập số nguyên dương!" << endl;
-    } else {
-        inFibonacci(n);
-    }
-
-    return 0;
-}
-
-
+Ch
