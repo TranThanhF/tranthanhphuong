@@ -1,25 +1,20 @@
-import java.util.Scanner;
+#include <iostream>
+using namespace std;
 
-public class PhepChia {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+int main() {
+    int number;
 
-        // Nhập hai số
-        System.out.print("Nhập số thứ nhất (a): ");
-        double a = scanner.nextDouble();
+    // Nhập số từ người dùng
+    cout << "Nhập một số nguyên: ";
+    cin >> number;
 
-        System.out.print("Nhập số thứ hai (b): ");
-        double b = scanner.nextDouble();
-
-        // Kiểm tra điều kiện b != 0
-        if (b == 0) {
-            System.out.println("Lỗi: Không thể chia cho 0!");
-        } else {
-            double thuong = a / b;
-            System.out.println("Thương của " + a + " và " + b + " là: " + thuong);
-        }
-
-        scanner.close();
+    // Kiểm tra nếu số chia hết cho 2 (số chẵn) hoặc không chia hết (số lẻ)
+    if (number % 2 != 0) {
+        cout << number << " là số lẻ." << endl;
+    } else {
+        cout << number << " là số chẵn." << endl;
     }
+
+    return 0;
 }
-Ch
+
