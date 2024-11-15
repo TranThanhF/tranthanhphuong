@@ -18,7 +18,12 @@ namespace TinhTong
             double tong = so1 + so2;
 
             // Hiển thị kết quả
-            Console.WriteLine($"Tổng của {so1} và {so2} là: {tong}");
+            Console.WriteLine($ "Tổng của {so1} và {so2} là: {tong}");
+
+            double tich = so1 * so2;
+
+            // Hiển thị kết quả
+            Console.WriteLine($ "tich của {so1} và {so2} là: {tich}");
 
             // Đợi người dùng nhấn phím trước khi thoát
             Console.WriteLine("Nhấn phím bất kỳ để thoát...");
