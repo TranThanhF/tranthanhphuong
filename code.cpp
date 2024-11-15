@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-<<<<<<< HEAD
+
 public class PhepChia {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -42,4 +42,4 @@ int main() {
     return 0;
 }
 
->>>>>>> f3a09ff33eea1c6992eb24bb9e596316c0f60904
+
