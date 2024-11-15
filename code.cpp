@@ -10,6 +10,7 @@ public class PhepChia {
 
         System.out.print("Nhập số thứ hai (b): ");
         double b = scanner.nextDouble();
+ 	double tong = so1 + so2;
 
 
             // Hiển thị kết quả
@@ -34,10 +35,10 @@ public class PhepChia {
             double so2 = Convert.ToDouble(Console.ReadLine());
 
             // Tính tổng
-            double tong = so1 - so2;
+            double am = so1 - so2;
 
             // Hiển thị kết quả
-            Console.WriteLine($"Trừ của {so1} và {so2} là: {tong}");
+            Console.WriteLine($"Trừ của {so1} và {so2} là: {am}");
 
             // Đợi người dùng nhấn phím trước khi thoát
             Console.WriteLine("Nhấn phím bất kỳ để thoát...");
