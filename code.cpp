@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+<<<<<<< HEAD
 public class PhepChia {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -23,3 +24,22 @@ public class PhepChia {
     }
 }
 Ch
+=======
+// Hàm tính UCLN bằng thuật toán Euclid
+
+int main() {
+    int num1, num2;
+
+    // Nhập hai số nguyên từ người dùng
+    cout << "Nhập số thứ nhất: ";
+    cin >> num1;
+    cout << "Nhập số thứ hai: ";
+    cin >> num2;
+
+    // Tính và in ra UCLN
+    cout << "Ước chung lớn nhất của " << num1 << " và " << num2 << " là: " << UCLN(num1, num2) << endl;
+
+    return 0;
+}
+
+>>>>>>> f3a09ff33eea1c6992eb24bb9e596316c0f60904
